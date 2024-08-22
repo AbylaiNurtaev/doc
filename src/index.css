@@ -5,6 +5,39 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+
+::-webkit-scrollbar {
+  width: 8px; /* Ширина скроллбара */
+
+}
+
+
+/* Ползунок внутри скроллбара */
+::-webkit-scrollbar-thumb {
+  background-color: #cfcfcf; /* Цвет ползунка */
+  border-radius: 10px; /* Радиус скругления */
+}
+
+/* Фон скроллбара */
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1; /* Цвет фона трека */
+}
+
+/* Примерное оформление для остальных браузеров */
+::-moz-scrollbar {
+  width: 8px;
+}
+
+::-moz-scrollbar-thumb {
+  background-color: #cfcfcf;
+  border-radius: 10px;
+}
+
+::-moz-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
 }
 
 code {

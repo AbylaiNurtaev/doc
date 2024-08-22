@@ -1,0 +1,49 @@
+.container
+    display: grid
+    place-items: center
+
+    width: 100vw
+
+
+    .innerContainer
+        display: flex
+        flex-direction: row 
+        width: 100%
+
+        justify-content: flex-start
+        gap: 50px
+        
+        .right
+            margin-top: 20px    
+            width: 800px
+
+            line-height: 25px
+
+            h1
+                font-size: 40px
+
+@media screen and ( max-width:  1280px)
+    .container
+        .innerContainer
+            .right
+                width: 65%
+
+@media screen and ( max-width:  1025px)
+    .container 
+        .innerContainer
+            justify-content: center
+            .left
+                display: none
+
+            .right
+                width: 80%
+
+@media screen and ( max-width:  800px)
+    .container
+        .innerContainer
+            .right
+                width: 90%
+    
+
+    
+    

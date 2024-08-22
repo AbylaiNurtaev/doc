@@ -1,0 +1,100 @@
+.container
+    width: 100vw
+
+    display: flex
+    flex-direction: column
+
+    justify-content: center
+    align-items: center
+
+    border-bottom: 1px solid #cccccc56
+
+    .menu
+        display: flex
+        flex-direction: column
+
+        justify-content: center
+        align-items: center
+        p
+            font-size: .875rem
+            line-height: 1.25rem
+            font-weight: 400
+            color: #11111192
+            padding: 6px
+            margin: 5px 0 0 0
+            width: 80%
+            transition: .5s
+            font-family: "Inter", sans-serif
+            border-radius: 5px
+
+    .innerContainer
+        width: 95%
+        height: 65px
+        display: flex
+        flex-direction: row
+
+        justify-content: space-between
+        align-items: center
+
+        .logo
+            display: flex
+            flex-direction: row
+
+            justify-content: center
+            align-items: center
+
+            gap: 20px
+
+        .burgerMenu
+            display: none
+            width: 15px
+
+        button
+            width: 224px
+            height: 40px
+            padding: 0 15px 0 15px
+
+            border-radius: 7px
+            border: none
+
+            display: flex
+            flex-direction: row
+
+            justify-content: flex-start
+            align-items: center
+
+            font-family: Arial, Helvetica, sans-serif
+            font-size: 1rem
+
+            font-weight: 400
+            color: #00000087
+
+            border: 0.5px solid #11111117
+            cursor: pointer
+            img
+                width: 16px
+                padding-right: 10px
+                margin-top: -2px
+                opacity: 0.5
+
+
+@media screen and ( max-width:  760px)
+    .container
+        .innerContainer
+
+            .burgerMenu
+                display: flex
+                margin-top: 3px
+            
+            button
+                width: 40px
+                padding: 0
+
+                justify-content: center
+
+                span
+                    display: none
+
+                img
+                    margin-top: 0
+                    padding: 0
