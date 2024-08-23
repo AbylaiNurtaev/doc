@@ -1,0 +1,98 @@
+.container
+    display: grid
+    place-items: center
+
+    width: 100vw
+    z-index: 0
+
+
+    .innerContainer
+        display: flex
+        flex-direction: row 
+        width: 100%
+        margin-top: 65px
+        
+
+        justify-content: flex-start
+
+        .navbar
+            margin-right: -10%
+            width: 525px
+
+            
+            height: 100%
+
+            margin-top: 50px
+            
+            right: -120px
+            
+
+            display: flex
+            flex-direction: column
+
+            position: fixed
+            z-index: 10
+
+            a
+                cursor: pointer
+                border-left: 1px solid #11111130
+                transition: .2s
+                text-decoration: none
+                color: #111111e0
+
+                margin: 0
+                padding: 8px 8px 8px 15px
+
+                &:hover
+                    color:#346DDB
+                    transition: .2s
+
+
+
+        
+        .left
+            width: 300px
+            position: relative
+        .right
+            margin-top: 20px    
+            width: 800px
+
+            line-height: 25px
+            margin-left: 50px
+
+            h1
+                font-size: 40px
+            
+            h2
+                padding-top: 20px
+
+            span
+                position: absolute
+                margin-top: -70px
+
+
+@media screen and ( max-width:  1280px)
+    .container
+        .innerContainer
+            .right
+                width: 65%
+
+@media screen and ( max-width:  1025px)
+    .container 
+        .innerContainer
+            justify-content: center
+            .left
+                display: none
+
+            .right
+                width: 80%
+
+@media screen and ( max-width:  800px)
+    .container
+        .innerContainer
+            .right
+                width: 90%
+    
+
+    
+    

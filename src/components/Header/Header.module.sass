@@ -8,6 +8,11 @@
     align-items: center
 
     border-bottom: 1px solid #cccccc56
+    position: fixed
+    
+    background: white
+    height: 65px
+    z-index: 500
 
     .menu
         display: flex
@@ -26,6 +31,41 @@
             transition: .5s
             font-family: "Inter", sans-serif
             border-radius: 5px
+
+    .overlay
+        width: 100vw
+        height: 200vh
+        background: rgba(111, 111, 111, 0.5)
+        backdrop-filter: blur(5px)
+        z-index: 200
+        position: absolute
+
+    .popUp
+        z-index: 200
+        
+
+        width: 728px
+        height: 32px
+
+        padding: 8px
+        border-radius: 5px
+        border: none
+        box-shadow: 0px 0px 28px -10px rgba(0,0,0,0.75)
+
+        font-family: "Inter", sans-serif
+        font-size: 17px
+        color: #00000092
+
+        &::placeholder
+            color: #38383892
+
+        
+
+
+        &:focus
+            outline: none
+            
+
 
     .innerContainer
         width: 95%
