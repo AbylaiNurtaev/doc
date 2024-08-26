@@ -56,14 +56,78 @@
         font-size: 17px
         color: #00000092
 
+        margin-top: 100px
+
         &::placeholder
             color: #38383892
 
-        
-
-
         &:focus
             outline: none
+            border: none
+
+
+
+    .findBlock
+        width: 696px
+        height: 20px
+
+        padding: 0 24px 24px 24px
+        background: white
+        border-radius: 0 0 5px 5px 
+        z-index: 1000   
+
+        position: absolute
+        margin-top: 700px
+        font-family: "Inter", sans-serif
+
+        border-top: 1px solid #cccccc56
+        height: 500px
+
+        overflow-y: scroll
+
+        .block
+            font-family: "Inter", sans-serif
+            
+            .mainTitle
+                font-size: 15px
+                font-weight: 600
+                transition: .3s
+                margin: 0
+                padding-top: 15px
+                font-family: "Inter", sans-serif
+                cursor: pointer
+                padding-bottom: 15px
+
+                &:hover
+                    background: #a7a7a72d
+                    transition: .3s
+
+            .subBlock
+                border-left: 1px solid #cccccc56
+                display: flex
+                flex-direction: column
+                
+                &:hover
+                    background: #a7a7a72d
+                    transition: .3s
+                a
+                    text-decoration: none
+                    margin: 0
+                    padding: 15px 0 15px 15px
+
+                .title
+                    color: #696969
+                    cursor: pointer
+                    padding-bottom: 0
+
+                .content
+                    color: #474747
+                    cursor: pointer
+                    font-size: 14px
+                    line-height: 22px
+
+
+
             
 
 
@@ -138,3 +202,7 @@
                 img
                     margin-top: 0
                     padding: 0
+
+        .popUp, .findBlock
+            width: 90%
+            padding: 10px
