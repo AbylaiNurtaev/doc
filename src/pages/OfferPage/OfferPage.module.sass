@@ -1,0 +1,77 @@
+.container
+    display: flex
+    flex-direction: column
+
+    justify-content: center
+    align-items: center
+
+    .innerContainer
+        width: 1024px
+
+        display: flex
+        flex-direction: column
+
+        justify-content: center
+        align-items: center
+
+        .crumbs 
+            display: flex
+            flex-direction: row
+
+            justify-content: flex-start
+            gap: 20px
+            cursor: pointer
+            align-items: center
+
+            width: 100%
+
+        button
+            width: 200px
+            height: 40px
+
+            border-radius: 5px
+
+            background: black
+
+            color: white
+
+            border: none
+            font-weight: bolder
+            cursor: pointer
+
+        .popup
+            width: 500px
+            height: 500px
+
+            border-radius: 10px
+            background: white
+
+            box-shadow: 2px 2px 36px -8px rgba(0,0,0,0.75)
+            position: absolute
+            top: 100px
+            z-index: 100
+
+            display: flex
+            flex-direction: column
+
+            justify-content: flex-start
+            align-items: center
+            
+
+            img
+                width: 40px
+                right: 10px
+                top: 10px
+                cursor: pointer
+                position: absolute
+
+        .blur
+
+            width: 100vw
+            height: 100vh
+            backdrop-filter: blur(10px)
+            background: rgba(255, 255, 255, 0.7)
+            position: fixed
+            top: 0
+            left: 0
+

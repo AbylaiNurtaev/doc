@@ -82,7 +82,7 @@ function Header() {
             <div className={s.innerContainer}>
                 <div className={s.logo}>
                     <img className={s.burgerMenu} onClick={() => setShowMenu(prev => !prev)} src="https://ka-p.fontawesome.com/releases/v6.6.0/svgs/regular/bars.svg?v=1&token=a463935e93" alt="" />
-                    <div className="logo">Logo</div>
+                    <img className={s.logotype} src="/logo.jpg" alt="" />
                 </div>
                 <button onClick={() => setPopup(true)}><img src="https://ka-p.fontawesome.com/releases/v6.6.0/svgs/regular/magnifying-glass.svg?v=1&token=a463935e93" alt="img" /><span>Search</span></button>
             </div>

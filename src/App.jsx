@@ -5,6 +5,7 @@ import HomePage from './pages/HomePage/HomePage';
 import ArticlePage from './pages/ArticlePage/ArticlePage';
 import AdminPage from './pages/AdminPage/AdminPage';
 import AArticles from './pages/AArticles/AArticles';
+import OfferPage from './pages/OfferPage/OfferPage';
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
           <Route path='/article/:title' element={<ArticlePage/>}></Route>
         </Route>
         <Route path='/admin' element={<AdminPage/>}></Route>
+        <Route path='/offer' element={<OfferPage/>}></Route>
         <Route path='/admin/AArticles' element={<AArticles/>}></Route>
         <Route path='/admin/AArticles/:title' element={<AArticles/>}></Route>
       </Routes>

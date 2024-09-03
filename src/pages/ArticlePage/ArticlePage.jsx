@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import s from './ArticlePage.module.sass';
 import LeftNavbar from '../../components/LeftNavbar/LeftNavbar';
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 
 import axios from '../../axios'
 
@@ -12,6 +12,7 @@ function ArticlePage() {
 
   const [articles, setArticles] = useState()
 
+  const navigate = useNavigate()
 
 
   useEffect(() => {
@@ -98,6 +99,7 @@ function ArticlePage() {
             ))}
         </div>
       </div>
+        <img className={s.gif} src='/banner1.gif' onClick={() => navigate('/offer')}/>
     </div>
   );
 }
